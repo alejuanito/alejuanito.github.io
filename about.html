@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" type="image/png" href="assets/images/favicon.png">
+        <title>CORPBOOT | Bootstrap Business Template - About Us</title>
+
+        <!-- CSS
+        ===============================================================-->
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Icons -->
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+        <!-- Theme CSS -->
+        <link href="assets/css/main.css" id="theme" rel="stylesheet">
+        <!-- Animation -->
+        <link href="assets/css/animate.min.css" rel="stylesheet">
+        <!-- Preloader -->
+        <link href="assets/css/preloader.css" rel="stylesheet" type="text/css">
+        <!-- Owl stylesheet -->
+        <link href="assets/owl-carousel/owl.carousel.css" rel="stylesheet">
+        <link href="assets/owl-carousel/owl.theme.default.min.css" rel="stylesheet">
+        <!-- Vanillabox -->
+        <link href="assets/css/vanillabox.css" rel="stylesheet">
+        <!-- Select Style -->
+        <link href="assets/css/bootstrap-select.min.css" rel="stylesheet">
+        
+        <!-- JAVASCRIPT
+        ===============================================================-->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv.min.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+        <![endif]-->
+        <!-- jQuery -->
+        <script src="assets/js/jquery-1.11.3.min.js"></script>
+        <!-- IE9 Compatibility -->
+        <!--[if lt IE 10]>
+        <script src="assets/js/jquery.placeholder.min.js"></script>
+        <script type='text/javascript'>
+            $(document).ready(function() {
+                $('input, textarea').placeholder();
+            });
+        </script>
+        <style type="text/css">
+            .inputbr{
+                padding:0 9px;
+            }
+            #preloader{
+                display:none;
+            }
+        </style>
+        <![endif]-->
+        <!--[if gte IE 9]><!-->
+        <!-- Preloader -->        
+        <script type='text/javascript'>
+            $(document).ready(function() {
+                $(window).load(function() {
+                    $('#preloader').fadeOut('slow', function() {
+                        $(this).remove();
+                    });
+                });
+                if(window.complete){
+                    $(window).trigger('load');
+                }
+            });
+        </script>
+        <!--<![endif]-->
+    </head>
+
+    <body>
+        <!-- PRELOADER
+        ===============================================================-->
+        <div id="preloader">
+            <div id="floatingCirclesG">
+                <div class="f_circleG" id="frotateG_01">
+                </div>
+                <div class="f_circleG" id="frotateG_02">
+                </div>
+                <div class="f_circleG" id="frotateG_03">
+                </div>
+                <div class="f_circleG" id="frotateG_04">
+                </div>
+                <div class="f_circleG" id="frotateG_05">
+                </div>
+                <div class="f_circleG" id="frotateG_06">
+                </div>
+                <div class="f_circleG" id="frotateG_07">
+                </div>
+                <div class="f_circleG" id="frotateG_08">
+                </div>
+            </div>
+        </div>
+
+        <!-- NAVBAR
+        ===============================================================-->
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Logo"></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li class="active"><a href="about.html">Nosotros</a></li>
+                        <li><a href="services.html">Servicios</a></li>
+                        <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
+                       <!--  <li><a href="pricing.html">Pricing</a></li> -->
+                       <!--  <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="blog.html">Blog Right Sidebar</a></li>
+                                <li><a href="blog-left.html">Blog Left Sidebar</a></li>
+                                <li><a href="blogpost.html">Single Right Sidebar</a></li>
+                                <li><a href="blogpost-left.html">Single Left Sidebar</a></li>
+                            </ul>
+                        </li> -->
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- BREADCRUMB
+        ===============================================================-->
+        <div class="breadcrumb-container">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="active">Nosotros</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- ABOUT US
+        ===============================================================-->
+        <main class="container-fluid page">
+            <!-- INTRODUCTION -->
+            <section class="row wow fadeIn bg-white" data-wow-duration="1200ms" data-wow-delay="100ms">
+                <div class="container">
+                    <div class="col-sm-12 col-md-6">
+                        <h3 class="h-underline">Nosotros</h3>
+                        <p class="text-justify"><img src="http://placehold.it/150x150/BDC3C7/ffffff" alt="Photo" class="pull-left img-rounded hoffset3 voffset1 vboffset3"><strong>Somos un equipo</strong> apasionado por el desarrollo de software a la medida de las necesidades de nuestros clientes.</p>
+                        <p class="text-justify"><strong>Nuestra metodología</strong> de desarrollo se adapta a la envergadura del proyecto, somos expertos en el uso de Scrum para el desarrollo ágil en ambientes altamente cambiantes que permite la entrega ágil de software funcional de alta calidad, asi mismo utilizamos las buenas prácticas del PMP para proyectos de gran magnitud que requieran una gestión del proyecto exhaustiva que asegure el éxito del proyecto en el tiempo.</p>
+                        <p class="text-justify"><strong>Nuestros productos</strong> están cuidadosamente diseñados de acuerdo a la necesidad del negocio de nuestros clientes, de tal forma que les podamos brindar la mejor arquitectura que permita una gran disponibilidad y capacidad de escalamiento.</p>
+                        <p class="text-justify">Orientamos nuestro desarrollo a la integración con sistemas propios de nuestros cliente, brindando una solución integral.</p>
+                        
+                    </div>
+                    <!-- ACCORDION -->
+                    <!-- <div class="col-sm-12 col-md-6">
+                        <h3 class="h-underline">Three frequently asked questions</h3>
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">1. What is HTML?</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <p>Nulla vitae adipiscing nisi, in dignissim nisl. Cras iaculis purus nec massa commodo, sit amet varius tellus commodo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">2. What is Twitter Bootstrap?</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Nulla vitae adipiscing nisi, in dignissim nisl. Cras iaculis purus nec massa commodo, sit amet varius tellus commodo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">3. What is CSS?</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>Nulla vitae adipiscing nisi, in dignissim nisl. Cras iaculis purus nec massa commodo, sit amet varius tellus commodo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+            <!-- MISION, VISION AND VALUES -->
+            <section class="row wow fadeIn bg-gray" data-wow-duration="1200ms" data-wow-delay="100ms">
+                <div class="container">
+                    <div class="col-sm-12 col-md-4">
+                        <p><br><img src="http://placehold.it/820x300/BDC3C7/ffffff" alt="Mission" class="img-responsive img-rounded vboffset3"></p>
+                        <h3 class="h-underline">Misión</h3>
+                        <p class="text-justify">Somos una empresa especializada en el desarrollo de software que busca convertir las ideas de nuestros clientes en valor para su organización, desarrollamos aplicaciones web y móviles de calidad de acuerdo a los requerimientos de nuestros clientes.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <p><br><img src="http://placehold.it/820x300/BDC3C7/ffffff" alt="Vision" class="img-responsive img-rounded vboffset3"></p>
+                        <h3 class="h-underline">Vision</h3>
+                        <p class="text-justify">Buscamos convertirnos en una de las consultoras de software más importantes del país, con productos y servicios de calidad que satisfagan las necesidades de nuestros clientes y usuarios.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <p><br><img src="http://placehold.it/820x300/BDC3C7/ffffff" alt="Values" class="img-responsive img-rounded vboffset3"></p>
+                        <h3 class="h-underline">Valores</h3>
+                        <p class="text-justify">Inkas Dev es un equipo amante de la investigación e innovación de nuevas tecnologias que nos permita brindar la calidad a nuestros productos y servicios, estamos comprometidos con los objetivos de nuestros clientes.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- SKILLS -->
+            <section class="row wow fadeIn bg-white" data-wow-duration="1200ms" data-wow-delay="100ms">
+                <div class="container">
+                    <div class="col-sm-12"><h3 class="h-underline">Habilidades</h3></div>
+                    <div class="col-sm-12 col-md-6 margin-bottom-xs">
+                        <img src="http://placehold.it/820x260/BDC3C7/ffffff" alt="Skills" class="img-responsive img-rounded">                        
+                        <p class="text-justify">Somos expertos desarrolladores Backend y Frontend, usamos los mejores Frameworks Java y JavaScript para construir aplicaciones web y móvil robustas y altamente escalables de acuerdo a las necesidades del negocio.</p>                   
+                        <p class="text-justify">Nuestros Ingenieros cuentan con las más importantes certificaciones en Scrum y XP para él desarrollo ágil de Software, gestión de proyectos PMP lo que asegura un correcto manejo de principio a fin para lograr el exito los proyectos de nuestros clientes.</p>
+                        <p class="text-justify">El valor añadido que proporcionamos es la alta capacidad que da esa experiencia a nuestro equipo para alcanzar un elevado conocimiento de las necesidades de cada cliente, y de los procedimientos y objetivos que rigen su funcionamiento. Sólo así nos vemos capacitados para poder seleccionar la arquitectura y herramientas más adecuadas en cada caso.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 skills">
+                        <h5>Desarrollo Web y Móvil</h5>
+                        <div class="progress">
+                            <div class="progress-bar wow slideInLeft" role="progressbar" data-value="95" style="width: 95%;">95%</div>
+                        </div>
+                        <h5>Integración de Sistemas</h5>
+                        <div class="progress">
+                            <div class="progress-bar wow slideInLeft" role="progressbar" data-value="70" style="width: 70%;">70%</div>
+                        </div>
+                        <h5>Consultoría de Gestión de Proyectos</h5>
+                        <div class="progress">
+                            <div class="progress-bar wow slideInLeft" role="progressbar" data-value="85" style="width: 85%;">85%</div>
+                        </div>
+                        <h5>Consultoría TI</h5>
+                        <div class="progress">
+                            <div class="progress-bar wow slideInLeft" role="progressbar" data-value="70" style="width: 70%;">70%</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- TEAM -->
+            
+            <!-- FACTS -->
+            <!-- <section class="row bg-white">
+                <div class="container">
+                    <div class="col-xs-12">
+                        <h3 class="h-underline">Some Facts</h3>
+                        <div class="row">
+                            <div class="col-md-3 margin20 text-center">
+                                <h3 class="text-color"><i class="fa fa-image le"></i> <span class="counter">7358</span></h3>
+                                <h5 class="tithi">Projects Complete</h5>
+                            </div>
+                            <div class="col-md-3 margin20 text-center">
+                                <h3 class="text-color"><i class="fa fa-users le"></i> <span class="counter">687</span></h3>
+                                <h5 class="tithi">Happy Customers</h5>
+                            </div>
+                            <div class="col-md-3 margin20 text-center">
+                                <h3 class="text-color"><i class="fa fa-clock-o le"></i> <span class="counter">5000</span></h3>
+                                <h5 class="tithi">Hours Work</h5>
+                            </div>
+                            <div class="col-md-3 margin20 text-center">
+                                <h3 class="text-color"><i class="fa fa-code le"></i> <span class="counter">10300</span></h3>
+                                <h5 class="tithi">Lines of code</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+        </main>
+
+        <!-- FOOTER
+        ===============================================================-->
+        <footer>
+            <div id="footer_bottom">
+                <div class="container">
+                    <div class="row wow fadeIn" data-wow-duration="100ms">
+                        <div class="col-sm-6 col-md-6 social">
+                            <a href=""><i class="fa fa-facebook fa-3x"></i></a>&nbsp;&nbsp;
+                            <a href=""><i class="fa fa-twitter fa-3x"></i></a>&nbsp;&nbsp;
+                            <a href=""><i class="fa fa-linkedin fa-3x"></i></a>&nbsp;&nbsp;
+                            <a href=""><i class="fa fa-youtube fa-3x"></i></a>&nbsp;&nbsp;
+                            <a href=""><i class="fa fa-instagram fa-3x"></i></a>&nbsp;&nbsp;
+                        </div>
+                        <div class="col-sm-6 col-md-6 credits">
+                            <p>&copy; CORPBOOT 2015. All Rights Reserved.</p>
+                            <p class="small"><i class="fa fa-angle-right"></i> Designed by: <a href="http://www.rafamemmel.com" target="_blank">Memmel</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JAVASCRIPT
+        ===============================================================-->
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Vanillabox -->
+        <script src="assets/js/jquery.vanillabox-0.1.6.min.js"></script>
+        <!-- OWL Carousel -->
+        <script src="assets/owl-carousel/owl.carousel.js"></script>
+        <!-- Select Style -->
+        <script src="assets/js/bootstrap-select.min.js"></script>
+        <!-- Scroll to Top -->
+        <script src="assets/js/jquery.goup.min.js"></script>
+        <!-- Counter Up -->
+        <script src="assets/js/waypoints.min.js"></script>
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <!-- Main -->
+        <script src="assets/js/main.js"></script>
+
+        <!-- Animation -->
+        <!--[if gte IE 9]><!-->
+        <script src="assets/js/wow.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                wow = new WOW({
+                    boxClass:     'wow',      // animated element css class (default is wow)
+                    animateClass: 'animated', // animation css class (default is animated)
+                    offset:       100,         // distance to the element when triggering the animation (default is 0)
+                    mobile: false             // trigger animations on mobile devices (true is default)
+                })
+                wow.init();
+            });
+        </script>
+        <!--<![endif]-->
+    </body>
+</html>
