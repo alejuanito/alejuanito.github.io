@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" type="image/png" href="assets/images/favicon.png">
+        <title>CORPBOOT | Bootstrap Business Template - Blog</title>
+
+        <!-- CSS
+        ===============================================================-->
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Icons -->
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+        <!-- Theme CSS -->
+        <link href="assets/css/main.css" id="theme" rel="stylesheet">
+        <!-- Animation -->
+        <link href="assets/css/animate.min.css" rel="stylesheet">
+        <!-- Preloader -->
+        <link href="assets/css/preloader.css" rel="stylesheet" type="text/css">
+        <!-- Owl stylesheet -->
+        <link href="assets/owl-carousel/owl.carousel.css" rel="stylesheet">
+        <link href="assets/owl-carousel/owl.theme.default.min.css" rel="stylesheet">
+        <!-- Vanillabox -->
+        <link href="assets/css/vanillabox.css" rel="stylesheet">
+        <!-- Select Style -->
+        <link href="assets/css/bootstrap-select.min.css" rel="stylesheet">
+
+        <!-- JAVASCRIPT
+        ===============================================================-->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv.min.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+        <![endif]-->
+        <!-- jQuery -->
+        <script src="assets/js/jquery-1.11.3.min.js"></script>
+        <!-- IE9 Compatibility -->
+        <!--[if lt IE 10]>
+        <script src="assets/js/jquery.placeholder.min.js"></script>
+        <script type='text/javascript'>
+            $(document).ready(function() {
+                $('input, textarea').placeholder();
+            });
+        </script>
+        <style type="text/css">
+            .inputbr{
+                padding:0 9px;
+            }
+            #preloader{
+                display:none;
+            }
+        </style>
+        <![endif]-->
+        <!--[if gte IE 9]><!-->
+        <!-- Preloader -->        
+        <script type='text/javascript'>
+            $(document).ready(function() {
+                $(window).load(function() {
+                    $('#preloader').fadeOut('slow', function() {
+                        $(this).remove();
+                    });
+                });
+                if(window.complete){
+                    $(window).trigger('load');
+                }
+            });
+        </script>
+        <!--<![endif]-->
+    </head>
+
+    <body>
+        <!-- PRELOADER
+        ===============================================================-->
+        <div id="preloader">
+            <div id="floatingCirclesG">
+                <div class="f_circleG" id="frotateG_01">
+                </div>
+                <div class="f_circleG" id="frotateG_02">
+                </div>
+                <div class="f_circleG" id="frotateG_03">
+                </div>
+                <div class="f_circleG" id="frotateG_04">
+                </div>
+                <div class="f_circleG" id="frotateG_05">
+                </div>
+                <div class="f_circleG" id="frotateG_06">
+                </div>
+                <div class="f_circleG" id="frotateG_07">
+                </div>
+                <div class="f_circleG" id="frotateG_08">
+                </div>
+            </div>
+        </div>
+
+        <!-- NAVBAR
+        ===============================================================-->
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Logo"></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li class="active dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="blog.html">Blog Right Sidebar</a></li>
+                                <li><a href="blog-left.html">Blog Left Sidebar</a></li>
+                                <li><a href="blogpost.html">Single Right Sidebar</a></li>
+                                <li><a href="blogpost-left.html">Single Left Sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="elements.html">Elements</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- BREADCRUMB
+        ===============================================================-->
+        <div class="breadcrumb-container">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li>Blog</li>
+                    <li class="active">Post</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- BLOG SIDEBAR
+        ===============================================================-->
+        <main class="container-fluid page">
+            <div class="container">
+                <div id="content" class="row bg-white">
+                    <!-- POSTS -->
+                    <div id="main" class="col-md-8" role="main">
+                        <!-- Article -->
+                        <article class="row hoffset1">
+                            <header>
+                            <img src="http://placehold.it/870x450/BDC3C7/ffffff" alt="Photo" class="img-responsive img-rounded">
+                            <h2 class="entry-title">Design and development of templates</h2>
+                            <p class="author">
+                            	<i class="fa fa-calendar"></i>
+                            	MARCH 21, 2015 <span>/</span> BY <a href=""><strong>JOHN</strong></a> <span>/</span> IN <a href=""><strong>CATEGORY</strong></a> <span>/</span> 3 <a href=""><strong>COMMENTS</strong></a>
+                            </p>
+                            </header>
+                            <section class="post_content">
+                            <p>Sed posuere malesuada ante, a gravida ipsum congue id. Cras tempus libero sit amet mauris blandit laoreet. Vestibulum ac enim vel tellus pharetra pellentesque vitae vitae lacus. Etiam consequat hendrerit congue. Proin commodo metus ac augue adipiscing, ac aliquet eros posuere. Donec dignissim ullamcorper cursus. Cras eget quam volutpat, luctus nunc vel, euismod felis. Nunc ultrices euismod consequat. Suspendisse id augue ut diam pharetra ultrices blandit sed lectus.</p>
+                            <blockquote>Cras tempus libero sit amet mauris blandit laoreet. Vestibulum ac enim vel tellus pharetra pellentesque vitae vitae lacus.</blockquote>
+                            <p>Sed posuere malesuada ante, a gravida ipsum congue id. Cras tempus libero sit amet mauris blandit laoreet. Vestibulum ac enim vel tellus pharetra pellentesque vitae vitae lacus. Etiam consequat hendrerit congue. Proin commodo metus ac augue adipiscing, ac aliquet eros posuere. Donec dignissim ullamcorper cursus. Cras eget quam volutpat, luctus nunc vel, euismod felis. Nunc ultrices euismod consequat. Suspendisse id augue ut diam pharetra ultrices blandit sed lectus.</p>
+                            <p>Sed posuere malesuada ante, a gravida ipsum congue id. Cras tempus libero sit amet mauris blandit laoreet. Vestibulum ac enim vel tellus pharetra pellentesque vitae vitae lacus. Etiam consequat hendrerit congue. Proin commodo metus ac augue adipiscing, ac aliquet eros posuere. Donec dignissim ullamcorper cursus. Cras eget quam volutpat, luctus nunc vel, euismod felis. Nunc ultrices euismod consequat. Suspendisse id augue ut diam pharetra ultrices blandit sed lectus.</p>
+                            <h1>h1 Corpboot heading</h1>
+                            <h2>h2 Corpboot heading</h2>
+                            <h3>h3 Corpboot heading</h3>
+                            <h4>h4 Corpboot heading</h4>
+                            <h5>h5 Corpboot heading</h5>
+                            <h6>h6 Corpboot heading</h6>
+                            <p>Sed posuere malesuada ante, a gravida ipsum congue id. Cras tempus libero sit amet mauris blandit laoreet. Vestibulum ac enim vel tellus pharetra pellentesque vitae vitae lacus. Etiam consequat hendrerit congue. Proin commodo metus ac augue adipiscing, ac aliquet eros posuere. Donec dignissim ullamcorper cursus. Cras eget quam volutpat, luctus nunc vel, euismod felis. Nunc ultrices euismod consequat. Suspendisse id augue ut diam pharetra ultrices blandit sed lectus.</p>
+                            </section>
+                            <!-- Tags -->
+                            <footer class="row entry-meta">
+                                <div class="col-md-10 col-pad7">
+                                    <p class="tags-links">
+                                        <a href="">Corporate theme</a>
+                                        <a href="">boostrap</a>
+                                        <a href="">business theme</a>
+                                        <a href="">bootstrap theme</a>
+                                        <a href="">template</a>
+                                    </p>
+                                </div>
+                                <div class="col-md-2 col-pad7">
+                                    <p class="text-right" id="edit-post">
+                                        <a href="" class="btn-edit"><i class="fa fa-edit"></i>&nbsp;Edit</a>
+                                    </p>
+                                </div>
+                            </footer>                            
+                            <!-- Author bio -->
+                            <div class="media author-bio">
+                                <a class="avatar" href="#">
+                                    <img class="media-object" src="http://placehold.it/64x64/BDC3C7/ffffff" alt="Author">
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading">John Doe</h4>
+                                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                                    <div class="row">
+                                        <div class="col-md-6 col-pad7">
+                                            <ul class="list-inline socialstaff social-author">
+                                                <li>
+                                                    <a href="" target="_blank" title="Facebook"><i class="fa fa-facebook-square"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="" target="_blank" title="Twitter"><i class="fa fa-twitter-square"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="" target="_blank" title="Google Plus"><i class="fa fa-google-plus-square"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="" target="_blank" title="LinkedIn"><i class="fa fa-linkedin-square"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6 col-pad7">
+                                            <h6 class="text-right">
+                                            <a class="view-all" href="" rel="author"><i class="fa fa-angle-right"></i> View all posts by John Doe</a>
+                                        </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Pagination -->
+                        <ul class="pagination voffset2">
+                            <li><a href="#"><i class="fa fa-angle-left small"></i>&nbsp; Previous post</a></li>
+                            <li><a href="#">Next post &nbsp;<i class="fa fa-angle-right small"></i></a></li>
+                        </ul>
+                        <!-- COMMENTS -->
+                        <h5 class="comments-title">
+                            <i class="fa fa-comments"></i> 3 comments on <span class="text-color">Design and development of templates</span>
+                        </h5>
+                        <!-- Comment 1 -->
+                        <div class="media comments">
+                            <a class="avatar" href="#">
+                                <img class="media-object" src="http://placehold.it/64x64/BDC3C7/ffffff" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h5 class="media-heading">Natalie Memmel
+                                    <small>November 28, 2014 at 9:30 PM</small>
+                                </h5>
+                                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                                <p class="text-right"><a href="" class="btn-reply"><i class="fa fa-reply"></i>&nbsp;Reply</a><a href="" class="btn-edit"><i class="fa fa-edit"></i>&nbsp;Edit</a></p>
+                            </div>
+                        </div>
+                        <!-- Comment 1 reply -->
+                        <div class="media reply">
+                            <a class="avatar" href="#">
+                                <img class="media-object" src="http://placehold.it/64x64/BDC3C7/ffffff" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h5 class="media-heading">John Doe
+                                    <small>December 3, 2014 at 10:25 PM</small>
+                                </h5>
+                                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                                <p class="text-right"><a href="" class="btn-reply"><i class="fa fa-reply"></i>&nbsp;Reply</a><a href="" class="btn-edit"><i class="fa fa-edit"></i>&nbsp;Edit</a></p>
+                            </div>
+                        </div>
+                        <!-- Comment 2 -->
+                        <div class="media comments">
+                            <a class="avatar" href="#">
+                                <img class="media-object" src="http://placehold.it/64x64/BDC3C7/ffffff" alt="">
+                            </a>
+                            <div class="media-body">
+                                <h5 class="media-heading">George Kollmann
+                                    <small>September 15, 2014 at 11:30 PM</small>
+                                </h5>
+                                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                                <p class="text-right"><a href="" class="btn-reply"><i class="fa fa-reply"></i>&nbsp;Reply</a><a href="" class="btn-edit"><i class="fa fa-edit"></i>&nbsp;Edit</a></p>
+                            </div>
+                        </div>
+                        <!-- Comments form -->
+                        <div class="row">
+                            <div class="col-xs-12 padding-zero voffset2">
+                                <h4 class="h-underline">Leave a Reply</h4>
+                                <form role="form">
+                                <fieldset>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4 col-pad7">
+                                            <div class="form-group">
+                                                <label class="sr-only" for="name">Name<br></label>
+                                                <input type="text" name="name" id="name" value="" class="form-control required" placeholder="Name" data-name="Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4 col-pad7">
+                                            <div class="form-group">
+                                                <label class="sr-only" for="email">Mail (required)<br></label>
+                                                <input type="email" name="email" id="email" value="" class="form-control required" placeholder="Mail (required)">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4 col-pad7">
+                                            <div class="form-group">
+                                                <label class="sr-only" for="website">Website<br></label>
+                                                <input type="text" name="website" id="website" value="" class="form-control" placeholder="Website">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-pad7">
+                                            <div class="form-group">
+                                                <label class="sr-only" for="message">Message<br></label>
+                                                <textarea rows="11" name="message" id="message" class="form-control required" placeholder="Message"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row actions">
+                                        <div class="col-sm-12 col-md-6 col-pad7">
+                                            <input type="submit" value="Post Comment" name="submit" id="submitButton" class="btn btn-default btn-primary-corp-big" title="Click here to leave a reply!">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                </form>
+                            <p>&nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SIDEBAR -->
+                    <aside id="sidebar-right" class="col-md-4 sidebar col-pad7">
+                        <!-- Search form -->
+                        <div class="well widget">
+                            <form role="form">
+                                <div class="input-group">
+                                    <input type="text" name="search" id="search" placeholder="Search..." value="" class="inputbr" />
+                                    <span class="input-group-btn">
+                                        <button type="submit" class="btn btn-default btn-primary-corp"><i class="fa fa-search"></i></button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Categories -->
+                        <div class="well widget">
+                            <h4>Blog Categories</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#"><i class="fa fa-angle-right"></i>&nbsp;Web Design</a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>&nbsp;Bootstrap Themes</a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>&nbsp;Corporate Template</a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>&nbsp;Business Services</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Recent posts -->
+                        <div class="well widget">
+                            <h4>Recent Post</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#"><i class="fa fa-angle-right"></i>&nbsp;Sed posuere malesuada ante</a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>&nbsp;Cras tempus libero sit amet mauris</a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>&nbsp;Cras eget quam volutpat luctus</a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>&nbsp;Nunc ultrices euismod consequat</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Tag Cloud -->
+                        <div class="well widget">
+                            <h4>Tag Cloud</h4>
+                            <div class="tagcloud">
+                                <a href="blogpost.html">Corporate theme</a>
+                                <a href="blogpost.html">website template</a>
+                                <a href="blogpost.html">web</a>
+                                <a href="blogpost.html">business theme</a>
+                                <a href="blogpost.html">bootstrap theme</a>
+                                <a href="blogpost.html">themes</a>
+                                <a href="blogpost.html">plantilla</a>
+                                <a href="blogpost.html">corporative</a>
+                                <a href="blogpost.html">template</a>
+                                <a href="blogpost.html">boostrap</a>
+                                <a href="blogpost.html">html5</a>
+                                <a href="blogpost.html">css3</a>
+                            </div>
+                        </div>
+                        <!-- Calendar -->
+                        <div class="well widget">
+                            <h4>Calendar</h4>
+                            <div id="calendar_wrap"><table id="wp-calendar">
+                                <caption class="text-color">June 2015</caption>
+                                <thead>
+                                <tr>
+                                    <th scope="col" title="Monday">M</th>
+                                    <th scope="col" title="Tuesday">T</th>
+                                    <th scope="col" title="Wednesday">W</th>
+                                    <th scope="col" title="Thursday">T</th>
+                                    <th scope="col" title="Friday">F</th>
+                                    <th scope="col" title="Saturday">S</th>
+                                    <th scope="col" title="Sunday">S</th>
+                                </tr>
+                                </thead>
+
+                                <tfoot>
+                                <tr>
+                                    <td colspan="3" id="prev" class="pad">&nbsp;</td>
+                                    <td class="pad">&nbsp;</td>
+                                    <td colspan="3" id="next" class="pad">&nbsp;</td>
+                                </tr>
+                                </tfoot>
+
+                                <tbody>
+                                <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="http://localhost/wordpress/2015/06/08/" title="We make it you live it, go for simple">8</a></td><td id="today">9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
+                                </tr>
+                                <tr>
+                                    <td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td>
+                                </tr>
+                                <tr>
+                                    <td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td>
+                                </tr>
+                                <tr>
+                                    <td>29</td><td>30</td>
+                                    <td class="pad" colspan="5">&nbsp;</td>
+                                </tr>
+                                </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </main>
+
+        <!-- FOOTER
+        ===============================================================-->
+        <footer>
+            <div id="footer_bottom">
+                <div class="container">
+                    <div class="row wow fadeIn" data-wow-duration="100ms">
+                        <div class="col-sm-6 col-md-6 social">
+                            <a href=""><i class="fa fa-facebook fa-3x"></i></a>&nbsp;&nbsp;
+                            <a href=""><i class="fa fa-twitter fa-3x"></i></a>&nbsp;&nbsp;
+                            <a href=""><i class="fa fa-linkedin fa-3x"></i></a>&nbsp;&nbsp;
+                            <a href=""><i class="fa fa-youtube fa-3x"></i></a>&nbsp;&nbsp;
+                            <a href=""><i class="fa fa-instagram fa-3x"></i></a>&nbsp;&nbsp;
+                        </div>
+                        <div class="col-sm-6 col-md-6 credits">
+                            <p>&copy; CORPBOOT 2015. All Rights Reserved.</p>
+                            <p class="small"><i class="fa fa-angle-right"></i> Designed by: <a href="http://www.rafamemmel.com" target="_blank">Memmel</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JAVASCRIPT
+        ===============================================================-->
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Vanillabox -->
+        <script src="assets/js/jquery.vanillabox-0.1.6.min.js"></script>
+        <!-- OWL Carousel -->
+        <script src="assets/owl-carousel/owl.carousel.js"></script>
+        <!-- Select Style -->
+        <script src="assets/js/bootstrap-select.min.js"></script>
+        <!-- Scroll to Top -->
+        <script src="assets/js/jquery.goup.min.js"></script>
+        <!-- Counter Up -->
+        <script src="assets/js/waypoints.min.js"></script>
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <!-- Main -->
+        <script src="assets/js/main.js"></script>
+
+        <!-- Animation -->
+        <!--[if gte IE 9]><!-->
+        <script src="assets/js/wow.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                wow = new WOW({
+                    boxClass:     'wow',      // animated element css class (default is wow)
+                    animateClass: 'animated', // animation css class (default is animated)
+                    offset:       100,         // distance to the element when triggering the animation (default is 0)
+                    mobile: false             // trigger animations on mobile devices (true is default)
+                })
+                wow.init();
+            });
+        </script>
+        <!--<![endif]-->
+    </body>
+</html>
