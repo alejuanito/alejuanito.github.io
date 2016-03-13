@@ -1649,7 +1649,7 @@ a > i.ra,.btn > i.ra{
     top:0;
     left:0;
     height:600px;
-    background:url('http://placehold.it/3840x1200/BDC3C7/ffffff');
+    background:url('../images/bg-header-1.jpg');
     background-repeat:no-repeat;
     background-position:center;
     -webkit-background-size:cover;
@@ -1703,7 +1703,7 @@ a > i.ra,.btn > i.ra{
 .home-promo .titlepro .middle{
     margin-top:20px;
     margin-bottom:20px;
-    font-size:56px;
+    font-size:50px;
     font-weight:800;
     color:#E4F1FE
 }
