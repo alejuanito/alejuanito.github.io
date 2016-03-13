@@ -2260,3 +2260,9 @@ only screen and (min-resolution:1.25dppx){
         -webkit-font-smoothing:subpixel-antialiased;
     }
 }
+
+@media all and (max-width:799px){ 
+ 
+  .bigFont30{ font-size: 30px !important; }
+}
+
