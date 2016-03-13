@@ -2263,6 +2263,6 @@ only screen and (min-resolution:1.25dppx){
 
 @media all and (max-width:480px){ 
  
-  .bigFont30{ font-size: 40px !important; }
+  .bigFont30{ font-size: 36px !important; }
 }
 
