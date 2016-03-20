@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <meta name="Keywords" content="java,subir aplicacion a la nube,desplegar aplicacion web,openshift,cloudcomputing,amazon,aws,deploy">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" type="image/png" href="assets/images/favicon.png">
+        <title>INKAS DEV | Desplegar Aplicación Web en OpenShift - Blog</title>
+
+        <!-- CSS
+        ===============================================================-->
+        <!-- Bootstrap Core CSS -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <!-- Icons -->
+        <link href="../assets/css/font-awesome.min.css" rel="stylesheet">
+        <!-- Theme CSS -->
+        <link href="../assets/css/main.css" id="theme" rel="stylesheet">
+        <!-- Animation -->
+        <link href="../assets/css/animate.min.css" rel="stylesheet">
+        <!-- Preloader -->
+        <link href="../assets/css/preloader.css" rel="stylesheet" type="text/css">
+        <!-- Owl stylesheet -->
+        <link href="../assets/owl-carousel/owl.carousel.css" rel="stylesheet">
+        <link href="../assets/owl-carousel/owl.theme.default.min.css" rel="stylesheet">
+        <!-- Vanillabox -->
+        <link href="../assets/css/vanillabox.css" rel="stylesheet">
+        <!-- Select Style -->
+        <link href="../assets/css/bootstrap-select.min.css" rel="stylesheet">
+
+        <!-- JAVASCRIPT
+        ===============================================================-->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv.min.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+        <![endif]-->
+        <!-- jQuery -->
+        <script src="../assets/js/jquery-1.11.3.min.js"></script>
+        <!-- IE9 Compatibility -->
+        <!--[if lt IE 10]>
+        <script src="assets/js/jquery.placeholder.min.js"></script>
+        <script type='text/javascript'>
+            $(document).ready(function() {
+                $('input, textarea').placeholder();
+            });
+        </script>
+        <style type="text/css">
+            .inputbr{
+                padding:0 9px;
+            }
+            #preloader{
+                display:none;
+            }
+        </style>
+        <![endif]-->
+        <!--[if gte IE 9]><!-->
+        <!-- Preloader -->        
+        <script type='text/javascript'>
+            $(document).ready(function() {
+                $(window).load(function() {
+                    $('#preloader').fadeOut('slow', function() {
+                        $(this).remove();
+                    });
+                });
+                if(window.complete){
+                    $(window).trigger('load');
+                }
+            });
+        </script>
+        <!--<![endif]-->
+    </head>
+
+    <body>
+        <!-- PRELOADER
+        ===============================================================-->
+        <div id="preloader">
+            <div id="floatingCirclesG">
+                <div class="f_circleG" id="frotateG_01">
+                </div>
+                <div class="f_circleG" id="frotateG_02">
+                </div>
+                <div class="f_circleG" id="frotateG_03">
+                </div>
+                <div class="f_circleG" id="frotateG_04">
+                </div>
+                <div class="f_circleG" id="frotateG_05">
+                </div>
+                <div class="f_circleG" id="frotateG_06">
+                </div>
+                <div class="f_circleG" id="frotateG_07">
+                </div>
+                <div class="f_circleG" id="frotateG_08">
+                </div>
+            </div>
+        </div>
+
+        <!-- NAVBAR
+        ===============================================================-->
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" style="color: #1E8BC3;" href="../index.html">INKAS DEV</a>
+                </div>
+                 <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li class="active"><a href="about.html">Nosotros</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- BREADCRUMB
+        ===============================================================-->
+       <div class="breadcrumb-container">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                     <li class="active">Post</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- BLOG SIDEBAR
+        ===============================================================-->
+        <main class="container-fluid page">
+            <div class="container">
+                <div id="content" class="row bg-white">
+                    <!-- POSTS -->
+                    <div id="main" class="col-md-12" role="main">
+                        <!-- Article -->
+                        <article class="row hoffset1">
+                            <header>
+                            <img src="https://openshift.redhat.com/app/images/overview-paas.png" alt="Photo" class="img-responsive img-roundehd"style="
+                                display: block; margin-left: auto; margin-right: auto;"  >                           
+                            <h2 class="entry-title">Como Desplegar tu Aplicación web en la nube de OPENSHIFT</h2>
+                            <p class="author">
+                            	<i class="fa fa-calendar"></i>
+                                Marzo 18, 2016 <span>/</span> BY <a href=""><strong>Alejandro</strong></a>
+                            </p>
+                            </header>
+                            <section class="post_content">
+                            <p>Por mucho tiempo hemos desarrollado nuestras aplicaciones web y siempre las hemos probado en nuestro famoso localhost, sin embargo ya es hora de pasar al siguiente nivel y subirnos a la nube.</p>
+                            <p>Actualmente tenemos muchas alternativas:</p>
+                            <ul>
+                                <li>Amazon Web Service AWS</li>
+                                <li>Open Shift</li>
+                                <li>Digital Ocean</li>
+                                <li>Heroku</li>
+                            </ul>
+                            <p>Todas son buenas y las deberás escoger de acuerdo a la magnitud de tu proyecto para mayor información puedes <a href="https://www.airpair.com/ruby-on-rails/posts/rails-host-comparison-aws-digitalocean-heroku-engineyard"><strong>leer este post. </strong></a>
+                            En esta ocasión les mostraré como desplegar tu aplicación web gratuitamente en OPEN SHIFT en unos cuantos pasos</p>
+                            <p>Para el ejemplo desplegaremos una aplicación Java que usa Spring MVC configurada con Maven, como base de datos Postgresql que la tenemos y usaremos nuestro repositorio git para manejar el código</p>
+
+                            <blockquote><p>Primero crearemos una cuenta en <a href="https://www.openshift.com/"><strong>Open Shift</strong></a> y crearemos nuestra aplicación desde la consola web, luego configuraremos nuestro ambiente local desde el cual haremos los deploys descargando nuestro código fuente desde nuestro repositorio git. Y asi de simple ya tendremos nuestra aplicación corriendo en la nube.</p>
+
+                            </blockquote>
+                            <h3>Crear cuenta y aplicación en OPENSHIFT</h3>
+                            <ul>
+                                <li>Ingresar a la página de <a href="https://www.openshift.com/app/account/new"><strong>OpenShift</strong></a></li>
+                                <li>Completar tus datos y verificar tu cuenta desde tu correo</li>
+                                <li>Iniciar sesión en OpenShift</li>
+                                <li>Dar click sobre <a href="https://www.openshift.com/app/account/new"><strong>Create your first application now...</strong></a></li>
+                            </ul>
+                            <img src="img/config-openshift01.png" alt="Photo" class="img-responsive img-roundehd"style="
+                                display: block; margin-left: auto; margin-right: auto;"  >
+                            <ul>
+                                <li>Escoger Tomcat 7 como contenedor de aplicaciones</li>
+                                <li>Configurar la "Public URL" deberás ingresar el nombre de tu aplicación y crear el nombre del subdominio, en nuestro caso la aplicación se llamará encuestas y el subdominio dem0nline011</li>
+                                <li>Dejar todas las configuraciones por defecto y crear la aplicación</li>
+                                <li>Ahora que ya hemos creado nuestra primera aplicación agregaremos nuestra base de datos, guarden en un lugar seguro sus credenciales de base de datos</li>
+                            </ul>
+                            <img src="img/config-openshift02.png" alt="Photo" class="img-responsive img-roundehd"style="
+                                display: block; margin-left: auto; margin-right: auto;"  >
+                            <ul>
+                                <li>Finalizados estos pasos ya tendremos creada nuestra aplicación y nuestra base de datos</li>
+                            </ul>
+
+                            <h3>Configuración de ambiente de desarrollo</h3>
+                            <ul>
+                                <li>Si estas en Windows este  <a href="https://developers.openshift.com/en/getting-started-windows.html"><strong>Post</strong></a> te será util, si estas en linux es probable que ya tengas instalado git y ruby asi que no tendrás mayor problema</li>
+                                <li>Lo primero que debes hacer es instalar <a href="http://rubyinstaller.org/downloads/"><strong>Ruby</strong></a> de preferencia que no sea la última versión</li>                                
+                                <li>Instala <a href="https://git-for-windows.github.io/"><strong>Git</strong></a> for windows si es que aun no lo tienes</li>
+                                <li>Despues de instalar ruby abre su consola y deberás instalar las herramientas de OpenShift con el siguiente comando <strong>gem install rhc</strong></li>
+                                <li>Ahora deberás crear tu llave pública que te permitirá conectarte con la aplicación web para lo cual abre la consola cmd o tu shell y digita <strong>ssh-keygen -t rsa -b 4096 -c “your@mail"</strong> de preferencia debe ser el email con el que creaste tu cuenta en OpenShift, la consola te preguntará si deseas ponerle contraseña y finalmente te creará dos archivos en la carpeta .ssh de tu usuario (id_rsa y id_rsa.pub) abre el archivo id_rsa.pub con tu editor de texto favorito y copia el contenido   </li>
+                                <li>En tu consola web debes ingresar a <a href="https://openshift.redhat.com/app/console/settings"><strong>settings y agregar una nueva llave </strong></a></li>
+                                <img src="img/config-openshift03.png" alt="Photo" class="img-responsive img-roundehd"style="
+                                display: block; margin-left: auto; margin-right: auto;"  >
+                            </ul>                           
+                            <ul>
+                                <li>Ingresa un identificador en name y pega lo copiaste anteriormente en el campo de public key con esto ya habrás configurado tu llave pública.</li>
+                                <li>Ahora nos toca la parte que mas nos gusta y es la del código para lo cual debemos crear una carpeta donde se almacenará todo nuestro código</li>
+                                <li>Abrimos nuestra Shell o el Git Bash que hemos instalado y haremos un clone a nuestra aplicación que se encuentra en OpenShift con el siguiente comando  <strong>git clone ssh://56e......000@nameapp-dem0nline011.rhcloud.com/~/git/jbossews.git/</strong> la ruta la obtendremos desde la consola web</li>
+                                <img src="img/config-openshift04.png" alt="Photo" class="img-responsive img-roundehd"style="
+                                display: block; margin-left: auto; margin-right: auto;"  >
+                                <li>Para hacer clone OPENSHIFT requerirá que ingresemos la clave de la llave pública si es que la creamos con clave</li>
+                                <img src="img/config-openshift05.png" alt="Photo" class="img-responsive img-roundehd"style="
+                                display: block; margin-left: auto; margin-right: auto;"  >
+                                <li>El código que se ha descargado es un código de prueba del mismo OPENSHIFT ahora tendremos que combinarlo con nuestro verdadero código fuente que se encuentra en nuestro repositorio git. <strong>git remote add name-remote https://a....@bitbucket.org/j./nameapp.git</strong> esto creará una nueva referencia a nuestro repositorio</li>
+                                <li>Entremos a la carpeta creada con <strong>cd nameapp</strong> y con <strong>git fetch name-remote</strong> bajaremos el código desde nuestro repositorio remoto</li>
+                                <li> <strong>git merge name-remote/master</strong> mezclará nuestro nuestro código</li>
+                            </ul>
+                            
+                            <h3>Despliegue de la aplicación</h3>
+                            <ul>
+                                <li>Ahora bastará con hacer <strong>git add .</strong> y <strong>git commit -m "desplegando mi app en la nube"</strong> y finalmente <strong>git push</strong></li>
+                                <img src="img/config-openshift06.png" alt="Photo" class="img-responsive img-roundehd"style="
+                                display: block; margin-left: auto; margin-right: auto;"  >
+                                <img src="img/config-openshift07.png" alt="Photo" class="img-responsive img-roundehd"style="
+                                display: block; margin-left: auto; margin-right: auto;"  >
+                                <li>Luego de hacer push OPENSHIFT se encargará del despliegue y levantará la aplicación.</li>
+                            </ul>
+                            <img src="img/config-openshift02.png" alt="Photo" class="img-responsive img-roundehd"style="
+                                display: block; margin-left: auto; margin-right: auto;"  >
+                            <ul>
+                                <li>Finalizados estos pasos ya tendremos creada nuestra aplicación y nuestra base de datos</li>
+                            </ul>
+                            <blockquote>Dejaremos este post hasta aqui, en el siguiente post veremos como configurar la base de datos y conectarnos a ella remotamente.</p>
+
+                            </blockquote>
+                            </section>
+                            <!-- Tags -->
+                                                       
+                            <!-- Author bio -->
+                         
+                        </article>
+                        <!-- Pagination -->
+                    </div>
+                    <div id="main" class="col-md-8" role="main">
+                        <div class="media comments">
+                           
+
+
+                        </div>
+
+                       
+                    </div>
+                    <!-- SIDEBAR -->
+                   
+                </div>
+            </div>
+        </main>
+
+        <!-- FOOTER
+        ===============================================================-->
+       <footer>
+           <div id="footer_bottom">
+                <div class="container">
+                    <div class="row wow fadeIn" data-wow-duration="100ms">
+                        <div class="col-sm-6 social">
+                            <a href=""><i class="fa fa-facebook fa-3x"></i></a>&nbsp;&nbsp;
+                            <!-- <a href=""><i class="fa fa-twitter fa-3x"></i></a>&nbsp;&nbsp;
+                            <a href=""><i class="fa fa-linkedin fa-3x"></i></a>&nbsp;&nbsp;
+                            <a href=""><i class="fa fa-youtube fa-3x"></i></a>&nbsp;&nbsp;
+                            <a href=""><i class="fa fa-instagram fa-3x"></i></a>&nbsp;&nbsp; -->
+                        </div>
+                        <div class="col-sm-6 credits">
+                            <p>&copy; INKAS DEV 2016. All Rights Reserved.</p>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JAVASCRIPT
+        ===============================================================-->
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Vanillabox -->
+        <script src="assets/js/jquery.vanillabox-0.1.6.min.js"></script>
+        <!-- OWL Carousel -->
+        <script src="assets/owl-carousel/owl.carousel.js"></script>
+        <!-- Select Style -->
+        <script src="assets/js/bootstrap-select.min.js"></script>
+        <!-- Scroll to Top -->
+        <script src="assets/js/jquery.goup.min.js"></script>
+        <!-- Counter Up -->
+        <script src="assets/js/waypoints.min.js"></script>
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <!-- Main -->
+        <script src="assets/js/main.js"></script>
+
+        <!-- Animation -->
+        <!--[if gte IE 9]><!-->
+        <script src="assets/js/wow.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                wow = new WOW({
+                    boxClass:     'wow',      // animated element css class (default is wow)
+                    animateClass: 'animated', // animation css class (default is animated)
+                    offset:       100,         // distance to the element when triggering the animation (default is 0)
+                    mobile: false             // trigger animations on mobile devices (true is default)
+                })
+                wow.init();
+            });
+        </script>
+        <!--<![endif]-->
+    </body>
+</html>
