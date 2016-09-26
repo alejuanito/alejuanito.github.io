@@ -1383,14 +1383,14 @@ a > i.ra,.btn > i.ra{
 }
 .navbar-brand img{
     width:184px;
-    margin-top:25px;
+    margin-top:8px;
     -webkit-transition:all .25s ease-out;
     -moz-transition:all .25s ease-out;
     -o-transition:all .25s ease-out;
     transition:all .25s ease-out
 }
 .navbar.tiny .navbar-brand img{
-    margin-top:18px
+    margin-top:1px
 }
 .navbar-default .navbar-nav > li > a{
     margin:20px 2px 2px;
@@ -2123,7 +2123,7 @@ a > i.ra,.btn > i.ra{
         margin-bottom: 15px;
     }
     .navbar-brand img, .navbar.tiny .navbar-brand img{
-        margin-top:24px
+        margin-top:8px
     }
     h3{
         font-size:28px
